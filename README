@@ -1,0 +1,43 @@
+tcl-tklib
+------------------------------------------
+Welcome to the tklib, the Tk Standard Library.  This package is
+intended to be a collection of Tcl packages that provide utility
+functions useful to a large collection of Tcl programmers.
+
+Runtime requirements:
+  tcl-8.5.8-1
+  tcl-tcllib-1.12-1
+  tcl-tk-8.5.8-1
+
+Additional build requirements:
+  cygport-0.9.86-1
+
+Canonical website:
+  http://tcllib.sourceforge.net/
+
+Canonical download:
+  http://sourceforge.net/projects/tcllib/files
+
+-------------------------------------------
+
+Build instructions:
+  unpack tcl-tklib-0.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./tcl-tklib-0.5-X.cygport all
+
+This will create:
+  /usr/src/tcl-tklib-0.5-X-src.tar.bz2
+  /usr/src/tcl-tklib-0.5-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 0.5-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

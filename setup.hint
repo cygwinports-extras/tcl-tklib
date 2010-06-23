@@ -1,0 +1,6 @@
+category: Tcl
+requires: tcl tcl-tcllib tcl-tk
+sdesc: "Tk Standard Library packages"
+ldesc: "Welcome to the tklib, the Tk Standard Library.  This package is 
+intended to be a collection of Tcl packages that provide utility 
+functions useful to a large collection of Tcl programmers."

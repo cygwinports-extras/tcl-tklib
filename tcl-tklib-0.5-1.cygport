@@ -1,0 +1,17 @@
+ORIG_PN="tklib"
+inherit tcl
+
+DESCRIPTION="Tk standard library"
+HOMEPAGE="http://tcllib.sourceforge.net/"
+SRC_URI="mirror://sourceforge/tcllib/${P#tcl-}.tar.bz2"
+
+src_compile() { :; }
+
+src_install() {
+	cd ${S}
+	${TCLSH} installer.tcl \
+		-no-wait -no-gui -no-html -nroff -no-examples -pkgs \
+		-pkg-path ${D}/usr/lib/${ORIG_PN}${PV} \
+		-nroff-path ${D}/usr/share/man/mann \
+		|| error "install.tcl failed"
+}
